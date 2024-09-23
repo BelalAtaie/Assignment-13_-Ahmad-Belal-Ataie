@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function countVowels(str){
+            let vowels = 'aeiou';
+            let count = 0;
+
+            for(let char of str.toLowerCase()){
+                if(vowels.includes(char)){
+                    count++;
+                }
+            }
+            return count;
+        }
+        let inputString = 'hello word , i love my vountry , iam a wed developer  '
+        console.log(`the count of vowels is ${countVowels(inputString)}`)
+    </script>
+</body>
+</html>

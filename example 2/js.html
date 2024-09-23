@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       var userInput = Number(prompt("Please enter a number to cheack Enen and Odd number ! "))
+
+       function cheackNumber(userInput){
+        if(userInput % 2 === 0){
+            console.log(`${userInput} is Even !`);
+        }
+        else if(userInput % 2 === 1){
+            console.log(`${userInput} is Odd !`);
+        }
+        else if(userInput !== "Number"){
+            console.log("Please enter a number !");
+        }
+       }
+       cheackNumber(userInput);
+    </script>
+</body>
+</html>
